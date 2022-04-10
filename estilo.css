@@ -38,7 +38,7 @@
 .boton-contacto{
     font-size: 15px;
     color: white;
-    background-color: #7f1bdd;
+    background-color: #8d5db9;
     border-radius:100px;
     padding: 0 25px;
     box-sizing: border-box;
@@ -67,7 +67,7 @@
 }
 .nombre{
     font-weight: 900;
-    color: rgb(127, 27, 221);
+    color: rgb(92, 33, 148);
     font-size: 60px;
     margin: 4px 0;
     
@@ -82,7 +82,7 @@
     font-size: 16px;
     text-align: center;
     color: white;
-    background-color: #7f1bdd;
+    background-color: rgb(92, 33, 148);
     border-radius:50px;
     padding: 20px 20px;
     max-width: 40%;
@@ -108,5 +108,33 @@
         align-items: flex-end;
     }
 
+.mis-conocimientos{
+    display: flex;
+    background-color: rgb(236, 223, 240);
+    flex-direction: column;
+    box-sizing: content-box;
+}
 
+.grid-tabla{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 40px;
+} 
 
+.grid-tabla div{
+    text-align: center;
+    border: 1px solid #8d5db9;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+
+}
+.grid-tabla img{
+    width: 50%;
+    height: 50%;
+    align-items: center;
+}
+.bb{
+    align-items: center;
+}
