@@ -18,17 +18,25 @@
     <div class="menu">
       <nav class="nav-menu">
         <ul class="lista">
-          <li class="item">HOLA</li>
-          <li class="item">CONOCIMIENTOS</li>
-          <li class="item">PROYECTOS</li>
+          <li class="item">
+            <a href="#hola">HOLA</a>
+          </li>
+          <li class="item">
+            <a href="#conocimiento" class="conocimiento">CONOCIMIENTOS</a>
+          </li>
+          <li class="item">
+            <a href="#proyecto" class="proyecto">PROYECTOS</a>
+          </li>
           <!--boton sin estilo de button-->
-          <li class="item boton-contacto">CONTACTO</li>
+          <li class="item boton-contacto">
+            <a href="#contacto" class="boton-contacto">CONTACTO</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
   <!--portada-->
-  <main class="main-hola">
+  <main class="main-hola" id="hola">
     <section class="hola espacio">
       <div class="sobre-mi">
         <p class="primerp">¡Hola! Soy</p>
@@ -41,7 +49,7 @@
   </main>
 
   <!--mis conocimientos-->
-  <section class="mis-conocimientos">
+  <section class="mis-conocimientos" id="conocimiento">
     <div class="conocimientos">
      <h2 class="titulo-section">
        Mis conocimientos
@@ -49,127 +57,163 @@
      <p class="plorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit officia id recusandae laborum aut saepe optio.</p>
     </div>
     <div class="grid-tabla">
-      <div class="contenido">
-        <div class="contenido">
+      <div class="grid-contenido">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-        <p>HTML5</p>
+        <p class="titulo-item">HTML5</p>
         </div>
-      </div>
-      <div class="contenido">  
+      <div class="grid-contenido">  
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-        <p>CSS3</p> 
+        <p class="titulo-item">CSS3</p> 
       </div>
-      <div class="contenido">
+      <div class="grid-contenido">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-        <p>SASS</p>
+        <p class="titulo-item">SASS</p>
       </div>
-      <div class="contenido">
+      <div class="grid-contenido">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-        <p>javascript</p> 
+        <p class="titulo-item">javascript</p> 
       </div>
-      <div class="contenido">
+      <div class="grid-contenido">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />    
-        <p>REACT</p>
+        <p class="titulo-item">REACT</p>
       </div>
-      <div class="contenido">
+      <div class="grid-contenido">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-        <p>GIT</p>
+        <p class="titulo-item">GIT</p>
       </div>
     </div>
     
   </section>
   <section class="section-someone">
     <div class="contenido-someone">
-      <i class="fa-solid fa-quote-right"></i>
+      <strong><i class="fa-solid fa-quote-right"></i></strong>
       <blockquote>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime omnis iste! Facilis, natus voluptas commodi itaque tenetur neque quibusdam cum veniam blanditiis, omnis quasi aliquam. Possimus itaque quasi assumenda!</p>
+        <p> El secreto de la motivación personal se puede resumir en las cuatro C: curiosidad, confianza, coraje y constancia.<br><br></p>
+        <strong><p>Walt Disney</p></strong>
       </blockquote>
     </div>
   </section>
-  <section class="proyectos">
-    <div class="proyectos">
-      <h1><strong>Mis proyecyos</strong></h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eveniet ipsum illum. Vero, maiores. Dolorum voluptate saepe expedita aperiam ab, ullam repellendus facilis excepturi suscipit, sapiente itaque culpa, perspiciatis ipsa.</p>
-    </div>
-    <div>
-      <div class="portfolio">
-        <img src="" alt="">
-        <p>Portfolio/p>
+  <section class="proyectos" id="proyecto">
+    <div class="contenedor-proyectos">
+      <div class="titulo-card">
+        <h1><strong>Mis proyecyos</strong></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Rerum eveniet ipsum illum. Vero, maiores. <br> Dolorum voluptate saepe expedita aperiam ab,<br>.</p>
       </div>
-      <div class="generador-memes">
-        <img src="" alt="">
-        <p>Generador de memes</p>
-      </div>
-      <div class="match">
-        <img src="" alt="">
-        <p>Match 3</p>
-      </div>
-      <div class="control-gastos">
-        <img src="" alt="">
-        <p>Control de gastos</p>
-      </div>
-      <div class="adm-reunion">
-        <img src="" alt="">
-        <p>Administrador de reuniones</p>
-      </div>
-      <div class="todo-app">
-        <img src="" alt="">
-        <p>Todo app</p>
-      </div>
-      <div class="buscador">
-        <img src="" alt="">
-        <p>Buscador de peliculas</p>
-      </div>
-    </div>
-  </section>
-  <section class="contacto">
-    <div class="contactame">
-      <h1>Contactame</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam esse autem libero saepe cumque, nam velit eveniet harum necessitatibus magnam. Assumenda ipsam enim adipisci doloremque praesentium ipsum aperiam exercitationem laudantium.</p>
-      <div class="redes">
-        <ul>
-          <li>email</li>
-          <li>linkedin</li>
-          <li>discord</li>
-          <li>telegram</li>
-        </ul>
-      </div>
-    </div>
-    <div class="formulario">
-      <h1>Escribime</h1>
-      <form action="form">
-        <label for="nombre">Nombre*</label>
-        <input type="text">
-        <label for="apellido">Apellido*</label>
-        <input type="text" name="apellido" id="lastname">
-        <label for="email">Email*</label>
-        <input type="email">
-        <label for="message">Mensaje*</label>
-        <input type="mensaje" name="" id="">
-        <button type="submit">Enviar</button>
-      </form>
+      <div class="card-proyectos">
+        <div class="img-proyectos">
+          <img src="img/portfolio.png">
+          <p>Portfolio</p>
+        </div>
+        <div class="img-proyectos">
+          <img src="img/generadormemes.png">
+          <p>Generador de memes</p>
+        </div>
+        <div class="img-proyectos">
+          <img src="img/match3.png">
+          <p>Match 3</p>
+        </div>
+        <div class="img-proyectos">
+          <img src="img/gastos.png" alt="caja fuerte">
+          <p>Control de gastos</p>
+        </div>
+        <div class="img-proyectos">
+          <img src="img/adm.png" alt="">
+          <p>Administrador de reuniones</p>
+        </div>
+        <div class="img-proyectos">
+          <img src="img/todoapp.png" alt="">
+          <p>Todo app</p>
+        </div>
+        <div class="img-proyectos">
+          <img src="img/peliculas.png" alt="">
+          <p>Buscador de peliculas</p>
+        </div>
+      </div>    
     </div>
   </section>
-  <footer>
+  <section class="contacto" id="contacto">
+    <div class="caja">
+      <div class="contactame">
+        <h1>Contactame</h1>
+        <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Numquam esse autem libero saepe cumque, nam velit eveniet harum necessitatibus magnam. Assumenda ipsam enim adipisci <br> doloremque praesentium ipsum <br> aperiam exercitationem laudantium.</p>
+        <div class="redes">
+          <ul class="lista-redes-enlace">
+            <li class="lista-redes-item">
+              <i class="fa-brands fa-linkedin"></i><a href class="lista-redes-enlace https://www.linkedin.com/in/cristinabenitezcb/" target="_BLANK">cristinabenitezcb</a>  
+            </li>
+            <li class="lista-redes-item">
+              <i class="fa-solid fa-envelope-circle-check"></i>
+              <a href class="lista-redes-enlace mailto:cbenitezc92@gmail.com">cbenitezc92@gmail.com</a>
+            </li>
+            <li class="lista-redes-item">
+              <i class="fa-brands fa-github-alt"></i>
+              <a href class="lista-redes-enlace https://github.com/Crismi22" target="_BLANK">Crismi22</a>
+            </li>
+            <li class="lista-redes-item">
+              <i class="fa-brands fa-twitter"></i>
+              <a href class="lista-redes-enlace https://twitter.com/krisminitu" target="_BLANK">@krisminitu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <div class="formulario">
+          <h1>Escribime</h1>
+          <form action="form">
+            <div class="form-nombre">
+              <label for="nombre">Nombre*</label>
+              <input type="text"> 
+              <label for="apellido">Apellido*</label>
+              <input type="text" name="apellido" id="lastname">
+            </div>
+            <div class="form-part">
+              <label for="email">Email*</label>
+              <input type="email"placeholder="micorreo@ejemplo.com" id="email" size="40">
+              <label for="message">Mensaje*</label>
+              <textarea name="message" id="messege" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
+              <button type="submit" class="boton-mensaje">Enviar</button>
+            </div>
+           
+          </form>
+        </div>
+    </div>
+  </section>
+  <footer class="footer-footer">
     <div class="footer-lista">
-      <nav>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      <nav class="footer-menu">
+        <ul class="menu-nav-f">
+          <li><a href="#hola">HOLA</a></li>
+          <li><a href="#conocimiento" class="conocimiento">CONOCIMIENTOS</a></li>
+          <li><a href="#proyecto" class="proyecto">PROYECTOS</a></li>
+          <li><a href="#contacto" class="boton-contacto">CONTACTO</a></li>
         </ul>
       </nav>
     </div>
     <div class="redes-footer-flex">
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="redes-footer">
+        <li>
+          <a href="https://www.linkedin.com/in/cristinabenitezcb/" target="_BLANK">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>  
+        </li>
+        <li>
+          <a href="mailto:cbenitezc92@gmail.com">
+            <i class="fa-solid fa-envelope-circle-check"></i>
+          </a> 
+        </li>
+        <li>
+          <a href="https://github.com/Crismi22" target="_BLANK">
+            <i class="fa-brands fa-github-alt"></i>
+          </a> 
+        </li>
+        <li>
+          <a href="https://twitter.com/krisminitu" target="_BLANK">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>  
       </ul>
     </div>
-    <span>Hecho con <i>corazon</i> por Cristina</span>
+    
+    <span>Hecho con 💜 por Cristina</span>
   </footer>
     
 </body>
