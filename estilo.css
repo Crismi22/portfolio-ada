@@ -5,17 +5,14 @@
     box-sizing: border-box;
 
 }
-
-
-
+/*comienzo de páfina - menú nav fijo******************************/
 .header{
     background-color: rgb(229, 199, 238);
     box-shadow: 1px 0px 2px 0px;
     padding: 30px;
     width: 100%;
-    position: fixed;
-    margin-top: 0;
-    
+    position:fixed;
+    margin-top: 0;   
 }
 
 .nav-menu{
@@ -62,14 +59,14 @@
     background-color:#5c2194;
 }
 
-/*portada*/
+/*portada***************************************************/
 
 .main-hola{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 100px 50px;
-    ;
+    
 }
 
 .hola{
@@ -77,7 +74,14 @@
     width: 100%;
     padding: 100px 50px;
     justify-content: center;
+
 }
+
+.espacio{
+    width: 100%;
+    max-width: 1400px;
+}
+
 .primerp{
     font-weight:800;
     font-size: 30px;
@@ -101,30 +105,24 @@
     text-align: center;
     color: white;
     background-color: #5c2194;
-    border-radius:50px;
-    padding: 20px 20px;
+    border-radius:30px;
+    padding: 20px;
     max-width: 40%;
     box-sizing: border-box;
     font-weight: 500;
 }
-
-.espacio{
-    width: 100%;
-    max-width: 1200px;
+.boton:hover{
+    background-color: #8d5db9;
 }
 
-.img-portada{
-    display: flex;
-    width: 100%;
-    padding: auto;
-    justify-content:end;
-}
-    img{
-        max-width: 1200px;
+.img-portada img{
+        margin-left: 30px;
         width: 600px;
         height: 500px;
         align-items: flex-end;
     }
+
+/*seccion mis conocimientos**************************************/
 
 .mis-conocimientos{
     display: flex;
@@ -152,49 +150,73 @@
 }
 .plorem{
     justify-items: center;
-    width: 400px;
-        
+    width: 400px;        
 }
 
-/*uso de grid para tabla en vez de flexbox*/    
+/*uso de grid para tabla en vez de flexbox*****/    
 .grid-tabla{
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: 40px;
-    height: 100hv;
     grid-gap: 10px;
-    justify-items: center;
-    flex-wrap: wrap;
     margin-bottom: 40px;
-} 
+    color: #5c2194;   
+}
+   
 
 .grid-tabla div{
-    display: grid;
     text-align: center;
-    border: .5px solid #8d5db9;
+    border: 1px solid #dddfe5;
     border-radius: 4%;
     height: 16em;
     width: 16em;
-    background-color: white;
-    }
-
-    .grid-tabla div:hover{
-        display: grid;
-        text-align: center;
-        border: 2px solid #6d05ceda;
-        border-radius: 4%;
-        height: 16em;
-        width: 16em;
-        background-color: white;
-        }
-
-
-.grid-contenido img{
-    align-self: center;
-    width: 40px;
-    height: 40px;
+    background-color: #fff;
+   
+    
 }
-/*comienzo de cita*/
+
+.grid-tabla div:hover{
+    border: 2px solid #6d05ceda;
+
+}
+
+.grid-contenido{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.html:hover{
+    color: #e54d26;
+}
+.css:hover{
+    color: #3d8fc6;
+}
+.sass:hover{
+    color: #c69;
+}
+.javascript:hover{
+    color: #f0db4f;
+}
+.react:hover{
+    color: #61dafb
+}
+.git:hover{
+    color: #f34f29; 
+}
+
+.grid-contenido i{
+    font-size: 60px;
+}
+
+.titulo-item{
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+/*comienzo de cita********************************/
 .contenido-someone{
    text-align: center;
    font-size: 30px; 
@@ -208,11 +230,12 @@
 }
 /*fin de cita*/
 
-/*seccion mis proyectos*/
+/*seccion mis proyectos****************************/
 
-.contenedor-proyectos{
+.contenedor-one{
     display: flex;
     max-width: 1200px;
+    max-height: 1200px;
     flex-direction: column;
     align-items: center;
     margin-left: 100px;
@@ -230,35 +253,63 @@
     padding: 20px 50px;
 }
 
-.card-proyectos{
+/****** grilla de proyectos ********/
+
+
+.card-proyecto{
     display: flex;
+    width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
+   
+}
+
+.contenedor-two{
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     width: 100%;
-    
-    
-     
+    justify-items: center;
+    margin: 50px auto;      
 }
 
-
-.img-proyectos img{
+.img-proyectos a{
+    width: 350px;
+    height: 300px;
+    flex-wrap: wrap;
+    border: 1px solid #dddfe5;
+    border-radius: 15px;
+    display: flex;
+    margin: 20px 20px;
     align-items: center;
-    border: 1px solid #8d5db9;
-    width: 100%;
-    display: block;
+    justify-content: center;
+}
 
-  
+.img-proyectos a:hover{
+    border: 2px solid #5c2194;
     
-    
+}
+.img-proyectos p:hover{
+    color: #5c2194;
 }
 
 .img-proyectos img{
-    align-self: center;
-    
+    width: 100%;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    flex-wrap: wrap;    
 }
 
-/*seccion contacto*/
+.nombre-card{
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+/*seccion contacto*****************************/
 
 .contacto{
     background-color:#ecdff0;
