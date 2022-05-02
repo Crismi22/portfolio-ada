@@ -564,6 +564,51 @@ comienzo de responsive en mobile
         height: auto;
         margin-left: 0%;
     }
-
+    /*fin de portada*/
+    /*comienzo de grilla de conocimientos*/
+    .titulo-section{
+        font-size: 25px;
+        margin: 30px 0 10px;
+    }
+    .plorem{
+        width: 250px;
+    }
+    .grid-tabla{
+        grid-template-columns: none;
+        grid-gap:40px;
+        margin-top: 40px;
+    }
+    .grid-tabla div{
+        width: 12em;
+        height: 10em;
+    }
+    .grid-contenido i{
+        font-size: 40px;
+    }
+    /*fin de grilla*/
+    /*comienzo de cita*/
+    .contenido-someone{
+        font-size: 1em;
+        padding: 80px 3px;
+    }
+    .fa-quote-right{
+        font-size: 50px;   
+    }
+    /*fin de cita*/
+    /*comienzo proyectos*/
+    .contenedor-one{
+        margin: 5px 0;
+    }
+    .titulo-card{
+        margin: 30px 0 10px;
+    }
+    .titulo-card h1{
+        font-size:30px;
+    }
+    .titulo-card p{
+        margin: 5px;
+        font-size: 13px;
+    }
+    
 }
 
