@@ -590,6 +590,7 @@ comienzo de responsive en mobile
         margin-top: 40px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .grid-tabla div{
         width: 12em;
@@ -614,6 +615,7 @@ comienzo de responsive en mobile
     }
     .titulo-card{
         margin: 30px 0 10px;
+        text-align: center;
     }
     .titulo-card h1{
         font-size:30px;
@@ -647,6 +649,7 @@ comienzo de responsive en mobile
         flex-direction: column;
         width: 90%;
         padding: 30px;
+        margin-bottom: 5%;
         text-align: center;
         align-items: center;
         height: auto;
