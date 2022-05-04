@@ -538,7 +538,7 @@ span{
 }
 
 /* ****************************************
-comienzo de responsive en mobile 
+******COMIENZO DE RESPONSIVE MOBILE***** 
 **************************************** */
 @media screen and (max-width:740px) {
     .main-hola{
@@ -715,7 +715,99 @@ comienzo de responsive en mobile
         margin: 5px;
         width: 30px;
         height: 30px;
-    }
-    
+    }    
+} 
 
-}   
+/******************************************/
+/*************RESPONSIVE TABLET/IPAD MINI*/
+@media screen and (min-width: 741px) and (max-width:1024px){
+    .main-hola{
+        padding: 50px 20px;
+    }
+    .header{
+        padding: 25px;
+    }
+    .nav-menu{
+        justify-content: center;
+        width: 90%;
+    }
+    .hola{
+        padding: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .presentacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .primerp{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .nombre{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .nombrep{
+        margin:10px;   
+    }
+    .boton{
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 5px 5px 0 rgb(229, 199, 238);    
+    }
+    .img-portada{
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-image: url(img/mariposas.jpg);
+        opacity: 1;
+        justify-content: center;
+    }
+    .img-portada img{
+        width: 450px;
+        height: auto;
+        margin-left: 0%;
+        opacity: 0.8;
+    }
+
+
+/*fin de portada*/
+/*****comienzo mis conocimientos*/
+    .titulo-section{
+        margin: 20px;
+        font-size: 40px;   
+    }
+    .plorem{
+        width: 40%;
+    }
+    .grid-tabla{
+        margin: 20px;
+        grid-template-columns:auto auto;
+        justify-content: center;
+        
+    }
+    .grid-tabla div{
+        width: 14em;
+        height: 14em;
+    }
+    .grid-contenido i{
+        font-size: 35px;
+    }
+/*****fin de grilla de proyectos**/
+/*comienzo de cita*/
+
+    .contenido-someone{
+        font-size: 25px;
+        padding: 25%;
+    }
+    .fa-quote-right{
+        font-size: 60px;
+    }
+
+
+
+}
