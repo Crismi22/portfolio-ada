@@ -797,7 +797,7 @@ span{
     .grid-contenido i{
         font-size: 35px;
     }
-/*****fin de grilla de proyectos**/
+/*****fin de grilla de conocimientos**/
 /*comienzo de cita*/
 
     .contenido-someone{
@@ -808,6 +808,69 @@ span{
         font-size: 60px;
     }
 
-
+/*****************/
+/*comienzo de mis proyectos*****/
+    .contenedor-one{
+        margin: 0 10%;
+    }
+    .contenedor-two{
+        margin: 0%;
+    }
+    .titulo-card{
+        margin: 5%; 
+    }
+    .titulo-card h1{
+        font-size: 40px;
+        padding: 5%;  
+    }
+    .titulo-card p{
+        text-align: center;
+    }
+    .img-proyectos{
+        width: 325px;
+        border-radius: 20px;
+    }
+    .img-proyectos a{
+        width: 325px;
+    }
+/********************/
+/*****comienzo de contacto*/
+    .contacto{
+        padding: 5%;
+    }
+    .caja{
+        flex-wrap: wrap;
+        padding: 5%;
+        height: auto;
+    }
+    .contactame{
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .contactame h1, .formulario h1{
+        font-size: 40px;
+        margin: 30px 30px;
+        text-align: center;
+        width: auto;   
+    }
+    .redes{
+        width: auto;
+        justify-content: left;
+    }
+    .redes i:hover{
+        transform: rotateX(90deg);
+        transition-duration: 1.5s;   
+    }
+    .formulario{
+        width: 95%;
+        margin: auto 10px;
+        padding-left: 0px;
+    }
+    .form-part{
+        margin-bottom: 10px;
+    } 
 
 }
+/**********************************/
+/**final final**/
