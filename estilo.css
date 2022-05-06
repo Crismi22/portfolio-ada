@@ -540,7 +540,7 @@ span{
 /* ****************************************
 ******COMIENZO DE RESPONSIVE MOBILE***** 
 **************************************** */
-@media screen and (max-width:740px) {
+@media screen and (max-width:425px) {
     .main-hola{
         padding: 0;
     }
@@ -720,7 +720,7 @@ span{
 
 /******************************************/
 /*************RESPONSIVE TABLET/IPAD MINI*/
-@media screen and (min-width: 741px) and (max-width:1024px){
+@media screen and (min-width:768px) and (max-width:1024px){
     .main-hola{
         padding: 50px 20px;
     }
