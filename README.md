@@ -26,9 +26,7 @@ Por ultimo el pie de pagina con una ultima lista de redes de contacto, una barra
 -max-width 768px - tablet/ipad 📱    
 -min-width 1024 - laptop 💻    
 
-
-
-
+![gif](https://media.giphy.com/media/NgurY1o4z080Jfoyzw/giphy.gif)
 
 
 
