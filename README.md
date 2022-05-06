@@ -1,6 +1,7 @@
 # portfolio-ada
 
 > Trabajo Practico final del primer modulo.
+<<<<<<< HEAD
 ## Página creada con HTML5 y CSS3.
 **INTRODUCCIÓN**   
 Se implementó el uso de HTML5 para estructurar la página y CSS3 para darle el estilado.    
@@ -13,6 +14,10 @@ Se encuentra lenguajes y conocimientos ubicados dentro de una grilla con iconos 
 ### CITA
 Un blockquote con una frase celebre de Walt Disney. 
 
+=======
+Página creada con HTML5 y CSS3.
+==very important words==.
+>>>>>>> 1f1f7743a9ba8844f5bd9074a3e2b352c7cfbaec
 
 
 
