@@ -3,9 +3,10 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    
 
 }
-/*comienzo de páfina - menú nav fijo******************************/
+/*comienzo de página - menú nav fijo******************************/
 .header{
     background-color: rgb(229, 199, 238);
     box-shadow: 1px 0px 2px 0px;
@@ -14,7 +15,6 @@
     position:fixed;
     margin-top: 0;   
 }
-
 .nav-menu{
     display: flex;
     justify-content: flex-end;
