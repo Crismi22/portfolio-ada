@@ -33,10 +33,11 @@ Por ultimo el pie de pagina con una ultima lista de redes de contacto, una barra
 
 
 
-ICONOS DE    
+ICONOS E IMAGENES DE    
 
 🔮[devicon](https://devicon.dev/)    
-🤓[fontawesome](https://fontawesome.com/start)   
+🤓[fontawesome](https://fontawesome.com/start)    
+🔮[unDraw](https://undraw.co/illustrations)   
 
 Tipo de fuente    
 🆎[Google Fonts](https://fonts.google.com/) 
