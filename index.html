@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link type="ico/png" sizes="64x64" rel="icon" href="img/mariposa2ico.ico">
     <title>CBenitez Portfolio</title>
+    
 </head>
 <body>
   <!--encabezado fijo-->
@@ -125,7 +126,7 @@
           </a>
         </div>
         <div class="img-proyectos">
-          <a href="https://crismi22.github.io/tp-ahorradas/#" target="_BLANK">
+          <a href="https://crismi22.github.io/tp-ahorradas/" target="_BLANK">
             <img src="img/gastos.png" alt="persona y una caja fuerte">
             <p class="nombre-card">Control de gastos</p>
           </a>
@@ -137,13 +138,13 @@
           </a>
         </div>
         <div class="img-proyectos">
-          <a href="#todoapp">
+          <a href="https://crismi-app-tareas.netlify.app/">
             <img src="img/todoapp.png" alt="persona con un control remoto viendo la tv">
-            <p class="nombre-card">Todo app</p>
+            <p class="nombre-card">App Tareas</p>
           </a>
         </div>
         <div class="img-proyectos">
-          <a href="#peliculas">
+          <a href="https://movies-react-kappa.vercel.app/">
             <img src="img/peliculas.png" alt="dos personas viendo peliculas">
           <p class="nombre-card">Buscador de peliculas</p>
           </a>
@@ -176,29 +177,29 @@
           </ul>
         </div>
       </div>
-        <div class="formulario">
-          <h1>Escribime</h1>
-          <form action="form">
-            <div class="caja-nombre">
-              <div class="form-nombre">
-                <label for="nombre">Nombre*</label>
-                <input type="text" placeholder="p.ej.:Ada" id="name" aria-label="ingrese su nombre">
-              </div>
-              <div class="form-nombre">
-                <label for="apellido">Apellido*</label>
-                <input type="text" placeholder="p.ej.:Lovelace" name="apellido" id="lastname" aria-label="ingrese su apellido">
-              </div>
+      <div class="formulario">
+        <h1>Escribime</h1>
+        <form action="https://formspree.io/f/mbjepjyn" method="POST" id="contact-form">
+          <div class="caja-nombre">
+            <div class="form-nombre">
+              <label for="nombre">Nombre*</label>
+              <input type="text" placeholder="p.ej.:Ada" id="name" aria-label="ingrese su nombre" name="name">
             </div>
-            
-            <div class="form-part">
-              <label for="email">Email*</label>
-              <input type="email"placeholder="micorreo@ejemplo.com" id="email" size="40" aria-label="ingrese su correo">
-              <label for="message">Mensaje*</label>
-              <textarea name="message" id="messege" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
-              <button type="submit" class="boton-mensaje">Enviar</button>
+            <div class="form-nombre">
+              <label for="apellido">Apellido*</label>
+              <input type="text" placeholder="p.ej.:Lovelace" name="apellido" id="lastname" aria-label="ingrese su apellido">
             </div>
-          </form>
-        </div>
+          </div>
+          <div class="form-part">
+            <label for="email">Email*</label>
+            <input type="email" name="email" placeholder="micorreo@ejemplo.com" id="email" size="40" aria-label="ingrese su correo">
+            <label for="message">Mensaje*</label>
+            <textarea name="message" id="messege" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
+            <button type="submit" class="boton-mensaje">Enviar</button>
+          </div>
+        </form>
+      </div>
+         
     </div>
   </section>
   <footer class="footer-footer">
@@ -239,6 +240,26 @@
     
     <span>Hecho con 💜 por Cristina</span>
   </footer>
-    
+  <script>
+    const form = document.querySelector('#contact-form');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(response => {
+        form.reset();
+        alert('¡Gracias por tu mensaje! Te responderé pronto.');
+      })
+      .catch(error => {
+        alert('Lo siento, ha ocurrido un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.');
+      });
+    });
+  </script>
 </body>
 </html>
